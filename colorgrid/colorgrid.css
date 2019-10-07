@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center
+}
+
+.lightPinkBox {
+    background-color: #F5C6D6;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.darkPinkBox1 {
+    background-color: #EE2E84;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.darkPinkBox2 {
+    background-color: #EE2E84;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.darkPinkBox3 {
+    background-color: #EE2E84;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.darkPinkBox4 {
+    background-color: #EE2E84;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.lightBlueBox1 {
+    background-color: #85CFD8;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.lightBlueBox2 {
+    background-color: #85CFD8;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.greenBox {
+    background-color: #8DC63F;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.orangeBox {
+    background-color: #E76E34;
+    width: 75%;
+    display: inline-block;
+    padding: 8px 50px 50px;
+    margin-left: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+div {
+    background-color: black;
+    height: 100px;
+    bor
+}

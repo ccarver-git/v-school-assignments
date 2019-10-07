@@ -1,0 +1,25 @@
+h1 {
+    color: darkgreen;
+    font-family: georgia;
+    text-align: center;
+    }
+
+h3 {
+    text-align: center
+}        
+
+body {
+    font: Georgia;
+    line-height: 25px;
+}
+
+img {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+p {
+    line-height: 25px;
+}
+

@@ -1,0 +1,37 @@
+#franceFlag {
+    width: 500px;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-left: 10px;
+    margin: left;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+#blueFrance {
+    background-color:blue;
+    width: 30%;
+    display: inline-block;
+    padding: 200px 0px 15px;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* #whiteFrance {
+    background-color: grey;
+    width: 30%;
+    display: inline-block;
+    padding: 200px 0px 15px;
+    margin-left: 125px;
+    position: relative;
+} */
+
+/* #redFrance {
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+    padding: 200px 0px 15px;
+    margin-left: 270px;
+    position: relative;
+} */

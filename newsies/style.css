@@ -1,0 +1,34 @@
+h1 {
+    color: purple;
+    font-family: Impact;
+    text-align: center;
+    }
+
+h3 {
+    text-align: center
+}        
+
+h4 {
+    text-align: center
+}  
+
+body {
+    font: Arial;
+    line-height: 25px;
+}
+
+p span.special
+{
+  font-weight:bold;
+   color:darkblue;
+}
+
+img {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+p {
+    line-height: 25px;
+}
