@@ -1,0 +1,35 @@
+h1 {
+    
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.additionBox {
+    background-color: blueviolet;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;  
+    left: 50px;
+}
+
+.subBox {
+    background-color: greenyellow;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;  
+    left: 50px;
+}
+
+.divBox {
+    background-color: blue;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;  
+    left: 50px;
+}

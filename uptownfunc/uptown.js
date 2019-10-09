@@ -8,42 +8,31 @@ var lyrics = ["This", "hit", "that", "ice", "cold",
 "with", "Saint", "Laurent", "Gotta", "kiss", 
 "myself", "I'm", "so", "pretty"];
 
+function func(arr){
+    return str.join(' ')
+}
+
+func(lyrics)
+
+function uptown(arr1){
+    return arr1.reverse().join(" ")
+}
+
+uptown(lyrics)
+
+
 const reverseLyrics = lyrics.reverse();
     console.log(reverseLyrics.join(" "))
 
-
-
-
-//EVENT LISTENERS   
-
-// console.log(document)
-
-// const myBox = document.getElementById('box')
-// const tagBox = document.getElementsByTagName ('div')
-// const classBox = document.getElementsByClassName('boxes')
-
-//html collection is not an array. 
-
-const myBox = document.getElementById('box')
-const myText = document.getElementById('textBox')
-
-myBox.addEventListener('click', function(){  //this is a method
-    this.style.backgroundColor = 'blue'
+function everyOtherWord(arr){
+    const newArr = []
+    for(let i = 0; i < arr.length; i+=2){
+        if(i % 2 === 0){
+            newArr.push(arr[i])
+        }
 }
+return newArr.push.join(' ')
 
-myBox.addEventListener('change', function(){ 
-    myBox.style.backgroundColor = 'red'
-}
-
-document.addEventListener('keypress', function(e){
-    if(e.kley == 'y'){
-        myBox.style.backgroundColor = 'yellow'
-    }else if (e.key === 'g'){
-        myBox.style.backgroundColor = 'green'
-
-    }
-}
+console.log(everyOtherWord(lyrics))
 
 
-
-//addEventListener //this is a function

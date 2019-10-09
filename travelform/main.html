@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Travel Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="travelForm">
+            <form id="travel">
+                <input type = "text" placeholder = "First Name" name='firstName'>
+                <input type = "text" placeholder = "Last Name" name='lastName'>
+                <input type = "number" placeholder = "Age" name='age'>
+                Male <input value= "male" type = "radio" name = "gender">
+                Female <input value= "Female" type = "radio" name = "gender">
+                <select name = "location" id="location" onchange = " ">
+                    <option value="">SELECT</option>
+                    <option value="Minnesota">China</option>
+                    <option value="Minnesota">Canada</option>
+                    <option value="Minnesota">Mexico</option>
+                    <option value="Minnesota">Fiji</option>
+                </select>
+                Lactose Free <input value="lactose free" name="restrictions" type="checkbox">
+                Nut Allergy <input value="nut allergy" name="restrictions" type="checkbox">
+                Meat Eater <input value="meat eater" name="restrictions" type="checkbox">
+                Diabetic <input value="diabetic" name="restrictions" type="checkbox">
+                <button>Submit</button>
+            </form>
+        </div>
+        <h3 id ="alert"></h3>
+        <script src ="app.js"></script>
+    </body>
+</html>
