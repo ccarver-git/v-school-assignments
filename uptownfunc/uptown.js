@@ -33,6 +33,6 @@ function everyOtherWord(arr){
 }
 return newArr.push.join(' ')
 
-console.log(everyOtherWord(lyrics))
+// console.log(everyOtherWord(lyrics))
 
 

@@ -1,0 +1,125 @@
+@media
+
+.container {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px;
+    width: 400px;
+    height: 250px;
+    margin: 50px;
+    
+}
+
+.redBox {
+    background-color: red;   
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-radius: 8px;
+}
+
+.blueBox {
+    background-color: blue;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    border-radius: 8px;
+}
+
+.greenBox {
+    background-color: green;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 8px;
+}
+
+.purpleBox {
+    background-color: purple;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    border-radius: 8px;
+}
+
+.yellowBox {
+    background-color: #e2e21b;
+    grid-column: 1/5;
+    grid-row: 3/3;
+    border-radius: 8px;
+}
+
+.containerTwo {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    
+}
+
+.redBoxTwo {
+    background-color: red;   
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-radius: 8px;
+}
+
+.blueBoxTwo {
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    border-radius: 8px;
+}
+
+.greenBoxTwo {
+    background-color: green;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    border-radius: 8px;
+}
+
+.purpleBoxTwo {
+    background-color: purple;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    border-radius: 8px;
+}
+
+.purpleBoxThree {
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-radius: 8px;
+}
+
+.containerThree {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px 200px 40px;
+    
+}
+
+.header {
+    background-color: #ff9800;
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    border-radius: 8px;
+}
+
+.content {
+    background-color: #009688;
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    border-radius: 8px;
+}
+
+
+
+
+.footer {
+    background-color: #8bc34a;
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    border-radius: 8px;
+}
