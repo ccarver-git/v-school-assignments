@@ -15,28 +15,30 @@
     <div class="container">
         
         <div class ="goombas">
-            <h3>Goombas</h3>
-        <form name="goombas" src="GoombaNSMB.jpg">
-            <input type = "number" placeholder = "howMany" name='howMany'> 
-            <button>Submit</button>
+            <h3>Goombas</h3> 
+            <p>5 Coins</p>
+            <img class="goombas" src="GoombaNSMB.jpg">
+        <form class="goombas" name = "goombasForm">
+            <input type = "number" placeholder = "howMany" name='howManyG'> 
         </form>
         </div>
-        
-            <div class ="bobombs">
-                <h3>Bob-ombs</h3>
-            <form name="bobombs" src = "375289-cheapycheep.jpg">
+        <div class ="bobombs">
+            <h3>Bob-ombs</h3>
+            <p>7 Coins</p>
+            <form class="bobombs" name="bobombsForm">
+                <img class="bobombs" src="fd43e0c8-a401-40d8-a557-6587a842dc9f_1.0ad7c70593d7d3ca05185a77fc383b0f.jpeg">
                 <input type = "number" placeholder = "howMany" name='howManyB'> 
-                <button>Submit</button>
             </form>
         </div>
-        
-            <div class ="cheepCheeps">
+            <div class ="cheepCheeps" name = "cheepCheepsForm">
                 <h3>Cheep-cheeps</h3>
+                <p>11 Coins</p>
+                <img class="cheepCheeps" src="375289-cheapycheep.jpg">
             <form name="cheepCheeps">
                 <input type = "number" placeholder = "howMany" name='howManyC'> 
-                <button>Submit</button>
             </form>
         </div>
+        <button id="submit">Submit</button>
     </div>
     <h3 id ="total"></h3>
     <script src ="app.js"></script>

@@ -1,12 +1,17 @@
-const form = document.goombas
+const form = document.goombasForm
+const form2 = document.bobombsForm
+const form3 = document.cheepCheeps
 
-form.addEventListener('submit', function(){
+const button = document.getElementById("submit")
+
+button.addEventListener('click', function(event){
     event.preventDefault()
 
-    const goombas = form.howManyG.value
-    // const howManyB = form.howManyB.value
-    // const howManyC = form.howManyC.value
+    let goombas = form.howManyG.value
+    let bobombs = form2.howManyB.value
+    let cheepCheeps = form3.howManyC.value
 
     document.getElementById('total')
-    .textContent = Number(howManyG) + Number(howManyB) + Number(howManyC)
+    .textContent = Number(goombas * 5) + Number(bobombs * 7) + Number(cheepCheeps * 11)
 })
+

@@ -1,26 +1,29 @@
+.contact-image {
+    color: white;
+}
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    color: #4caf50;
+    font-family: 'Brush Script MT';
+    font-size: 90px;
+    text-align: center; 
+    text-shadow: 0 5px 5px black;;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 130px;
+    left: 100px;
+}
 
 nav {
     background-color: #064663;
     width: 100%;
-}
-
-.contact-image {
-    position: relative;
-    color: white;
-    width: 100%;
-    height: 270px;
-}
-
-.contact {
-    color: #03a9f4;
-    font-family: 'Brush Script MT';
-    font-size: 90px;
-    text-align: center; 
-    text-shadow: 0 1px 3px black;;
-    position: absolute;
-    z-index: 1;
-    top: 25%;
-    left: 30%;
 }
 
 ul {
@@ -47,14 +50,20 @@ li a {
 }
 
 a:hover {
-    background-color: #ffc107;
+    background-color: #4caf50;
     padding: 10px;
 }
 
-.container-contact {
+.container-contact-form {
+    background-color: white;
+    width: 225px;
+    height: 200px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    border: solid #064663;
 
 }
-
 
 .footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -64,5 +73,5 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 10px;
     margin: 0px;
-    background-color: #313131;
+    background-color: #064663;
 }
