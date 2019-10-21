@@ -1,0 +1,100 @@
+.container {
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+}
+
+.myBox1 {
+    background-color: #2196f3;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-duration: 0.25s;
+}
+
+.myBox1:hover {
+    box-shadow: none;
+    border-radius: 20px;
+    background-color: cyan;
+}
+
+.myBox2 {
+    background-color: #cddc39;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-duration: 0.25s;
+}
+
+.myBox2:hover {
+    box-shadow: darkgray;
+    box-shadow: 3px;
+    border-radius: 50%;
+    border: none;
+    background-color: #607d8b;
+}
+
+.myBox3 {
+    background-color: #e91e63;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-duration: 3s;
+}
+
+.myBox3:hover {
+    border-radius: 5px;
+    border: dashed 10px;
+    background-color: hotpink;
+}
+
+.myBox4 {
+    background-color: #f44336;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-duration: 1s;
+}
+
+.myBox4:hover {
+    border-radius: 15px;
+    border: ridge 5px;
+    background-color: green;
+}
+
+.myBox5 {
+    background-color: purple;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-duration: 1s;
+}
+
+.myBox5:hover {
+    border-radius: none;
+    border: none;
+    background-color: transparent;
+}
+
+.myBox6{ 
+    background-color: none;
+    border: 2px solid;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition-property: top, left, border-radius, background-color;
+    transition-duration: 2s, 1s, 0.5s, 0.5s;
+    transition-delay: 0s, 0.5s, 1s, 1.5s;
+}
+
+.myBox6:hover {
+    border-radius: 15px;
+    border: 5px solid yellowgreen;
+    background-color: black;
+}
+
+

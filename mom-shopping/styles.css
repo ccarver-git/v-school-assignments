@@ -1,0 +1,24 @@
+#header {
+    background-color: #9c27b0;
+    padding: 10px 10px;
+    color: white;
+    text-align: center
+}
+
+.foodList {
+    grid: flex;
+    text-align: center;
+}
+
+#getItems {
+    text-align: left;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #9c27b073;
+    font-size: 16px;
+
+}

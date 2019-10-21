@@ -1,0 +1,7 @@
+div {
+    display: grid;
+    grid-template-columns: 
+    align-items: center;
+    margin: auto;
+
+}

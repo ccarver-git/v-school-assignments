@@ -1,0 +1,23 @@
+
+    {
+    "appetizers": [
+        {"name": "wings", "ingredients": ["chicken", "yummy sauce"], "description": "chicken wings"},
+        {"name": "chips and salsa", "ingredients": ["chips", "salsa", "bowl"], "description": "chips and salsa"}
+        ],
+    "coldSandwiches": [
+        {"name": "peanut butter and jam", "ingredients": ["bread", "peanut butter", "grape jelly"], "description": "peanut butter and jam"}, 
+        {"name": "ham sandwich", "ingredients": ["ham", "bread"], "description": "ham and more ham"}
+        ],
+    "hotSandwiches": [
+        {"name": "pulled pork grilled cheese", "ingredients": ["pork", "cheese", "bread"], "description": "pulled pork grilled cheese"},
+        {"name": "sweet and spicy sloppy joes", "inredients": ["sweet", "spicy", "joe"]}
+        ],
+    "desserts": [
+        {"name": "oreos", "ingredients": ["oreos", "milk"], "description": "oreos"},
+        {"name": "cheesecake", "inredients": ["sweet", "spicy", "joe"], "description": "cheesecake"}
+        ],
+    "drinks": [
+        {"name": "root beer float", "ingredients": ["ice cream", "root beer"], "description": "pulled pork grilled cheese"},
+        {"name": "stawberry lemonade", "inredients": ["fresh strawberries", "water"]}
+        ]
+    }
