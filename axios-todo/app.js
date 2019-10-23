@@ -4,13 +4,32 @@ axios.get("https://api.vschool.io/Clint/todo").then((response) => {
     const todos = response.data
 
     console.log(todos)
-    // todos.forEach(todo=>{
-    //     makeTodo(todo)
-    // })
     for(let i = 0; i < todos.length; i ++){
         makeTodo(todos[i])
     }
 })
+
+function deleteToDo(todo){
+    const deleteBox = document.createElement("button")
+    deleteBox.innerHTML = 'Delete';
+
+    deleteBox.addEventListener("click", function(event){
+        todo.deleted = deleteBox.checked
+
+        deleteItem(todo, event.target.parentNode)
+        console.log(event.target.deleted)
+    })
+    return deleteBox
+    
+}
+
+function deleteItem(todo, parent){
+    parent.parentNode.removeChild(parent)
+    axios.delete(`https://api.vschool.io/Clint/todo/${todo._id}`, todo).then(response => {
+        console.log(response.data)
+    })
+
+}
 
 function makeTodo(todo){
     const container = document.createElement("div")
@@ -18,24 +37,23 @@ function makeTodo(todo){
     const p = document.createElement("p")
     const img = document.createElement("img")
     const checkbox = document.createElement("input")
-
-
+    const price = document.createElement("price")
+    const deleteBox = deleteToDo(todo)
+    
+    h1.textContent = todo.title
     if(todo.completed){
-        h1.style.textDecoration ="line-though"
+        h1.style.textDecoration ="line-through"
     }
 
-    // InputDeviceInfo = todo.title
     checkbox.type = "checkbox"
     checkbox.checked = todo.completed
 
-    checkbox.addEventListener("change", function(event){
-        todo.completed = checkbox.checked
-
-        updateToDo(todo)
-        console.log(event.target.checked)
+    checkbox.addEventListener("change", e => {
+        axios.put("https://api.vschool.io/Clint/todo/" + todo._id, { completed: e.target.checked }).then(response => {
+            h1.style.textDecoration = response.data.completed ? "line-through" : "none"
+        })
     })
 
-    h1.textContent = todo.title
     p.textContent = todo.description
     img.src = todo.imgUrl
    
@@ -45,7 +63,10 @@ function makeTodo(todo){
     container.appendChild(img)
     container.appendChild(checkbox)
     console.log(container)
+
     list.appendChild(container)
+    container.appendChild(price)
+    container.appendChild(deleteBox)
 }
 
 function updateToDo(todo){
@@ -61,7 +82,8 @@ addForm.addEventListener("submit", function(event){
     const formData = {
         title: addForm.title.value,
         description: addForm.description.value,
-        imUrl: addForm.imgUrl.value
+        imgUrl: addForm.imgUrl.value,
+        price: addForm.price.value
     }
 
     axios.post("https://api.vschool.io/Clint/todo", formData).then(response => console.log(response.data))

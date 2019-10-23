@@ -5,6 +5,16 @@ var roomOptions = ["put hand in hole", "find the key", "open the door"];
 var key = 
 var door =
 
+const key = key 
+const door = door
+const hole = hole
+
+console.log(
+    "Hello and welcome! Your adventure begins now. You are trapped in a room and . "
+  );
+  
+  gameStart();
+
 index = readlineSync.keyInSelect(roomOptions, 'which option');
     console.log('Congrats, you escaped the room');
 
