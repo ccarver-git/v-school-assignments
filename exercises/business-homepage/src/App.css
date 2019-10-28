@@ -1,0 +1,22 @@
+.navBar {
+    
+}
+
+.home-page-image {
+    position: relative;
+    width: 100%;
+    auto: auto;
+}
+
+h1 {
+    color: #fa2713;
+    font-family: 'copperplate';
+    font-size: 80px;
+    text-align: center; 
+    text-shadow: 0 5px 5px black;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 400px;
+    left: 0px;
+}
