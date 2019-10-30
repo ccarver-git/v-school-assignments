@@ -186,4 +186,126 @@
     padding: 5px 150px 80px;
 }
 
+#tongaFlag {
+    width: 500px;
+    padding: 20px 15px;
+    margin-left: 10px;
+    margin: left;
+}
+
+#tongaRed {
+    background-color: red;
+    width: 450px;
+    padding: 250px 0px 15px;
+    position: absolute;
+}
+
+#tongaWhite {
+    background-color: white;
+    height: 130px;
+    width: 200px;
+    position: absolute;
+
+}
+
+#tongaRedVert {
+    background-color: red;
+    height: 35px; 
+    width: 85px;
+    left: 50px; 
+    top: 45px;
+    position: relative;
+}
+
+#tongaRedHori {
+    background-color: red;
+    height: 80px; 
+    width: 35px;
+    left: 75px; 
+    bottom: 10px;
+    position: relative;
+}
+
+#japanFlag {
+    padding: 20px 15px;
+    margin-left: 10px;
+    margin: left;
+    position: relative;
+    top: 150px;
+}
+
+#japanWhite {
+    background-color: white;
+    width: 450px;
+    padding: 250px 0px 15px;
+    position: relative;
+}
+
+#japanRed {
+    background-color: red;
+    height: 160px;
+    width: 160px;
+    position: relative;
+    border-radius: 100%;
+    bottom: 215px;
+    left: 140px;
+}
+
+#greeceFlag {
+    padding: 20px 15px;
+    margin-left: 10px;
+    margin: left;
+    position: relative;
+}
+
+#greeceBlue {
+    background-color: #0D5EAF;
+    width: 450px;
+    height: 28px;
+    border-top: 28px solid white;
+    position: relative;
+    bottom: 0px;
+}
+
+#nigerFlag {
+    width: 500px;
+    padding: 10px 15px;
+    margin: 20px;
+    position: relative;
+    bottom: 0px;
+}
+
+#nigerRed {
+    background-color: #E05206;
+    width: 30%;
+    padding: 5px 150px 100px;
+}
+
+#nigerWhite {
+    background-color: white;
+    width: 30%;
+    padding: 5px 150px 100px;
+}
+
+#nigerGreen {
+    background-color: #0DB02B;
+    width: 30%;
+    padding: 5px 150px 100px;
+}
+
+#nigerCircle {
+    background-color: #E05206;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    border-radius: 100%;
+    bottom: 203px;
+    left: 170px;
+}
+
+
+
+
+
+
 

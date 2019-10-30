@@ -2,27 +2,43 @@ h1 {
     color: #0d355a;
     font-family: Impact;
     text-align: center;
-    font-size: 50px;
-    }
+    font-size: 55px;
+    margin: 15px;
+    border: #0d355a solid;
+}
 
 h3 {
-    text-align: center
-}        
-
-h4 {
-    text-align: center
-}  
-
-body {
-    font: Arial;
-}
-
-img {
-    margin: auto;
-    width: 100%;
-}
-
-.comeclean {
+    color: #194f80;
     text-align: center;
     font-size: 25px;
+    margin: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.main-image-jordan {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    display: inline-block;
+}
+
+.date {
+    font-size: 14px;
+    margin: 8px;
+    margin-left: 60px;
+}
+
+.clean {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

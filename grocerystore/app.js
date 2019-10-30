@@ -20,6 +20,4 @@ var golfer = {
     }
 }
 
-golfer.callaway(
-    
-)
+golfer.callaway()
