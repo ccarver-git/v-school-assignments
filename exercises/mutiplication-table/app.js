@@ -39,14 +39,13 @@
 //     }
 // }
 
-capilizeAndLowercase("Hello")
-  return str
-  // return any given string in both lower and upper case.
-  var lowerCase 
-
-  var upperCase 
+// function capilizeAndLowercase(){
+//   return 
+// }
 
 
+// capilizeAndLowercase("Hello")
+//   console.log(capilizeAndLowercase)
 
 
 // var saying = "hello"
@@ -55,8 +54,8 @@ capilizeAndLowercase("Hello")
 //     console.log(uppercaseSaying)
 
 
-var fruit = ["banana", "apple", "orange", "watermelon"];
-var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
+// var fruit = ["banana", "apple", "orange", "watermelon"];
+// var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 
 // vegetables.pop()
 // console.log(vegetables)
@@ -64,8 +63,46 @@ var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 // fruit.shift()
 // console.log(fruit)
 
-var newFood = fruit.push("orange")
-console.log(newFood)
-// 5
+// var newFood = fruit.push("orange")
+// console.log(newFood)
+// Answer = 5
 
+// fruit.push(5)
+// console.log(fruit)
+
+// console.log(vegetables.length)
+// Answer = 4
+
+// vegetables.push(3)
+// console.log(vegetables)
+
+// var food = fruit.concat(vegetables)
+
+// console.log(food)
+
+// var foodNew = food.slice(4, 5)
+
+// console.log(foodNew)
+
+// var first3 = foodNew.slice(0, 3)
+// console.log(first3)
+
+// var second3 = foodNew.slice(4, )
+
+// var remove2Items = first3 + 
+
+
+
+//EMPLOYEE RECORDS//
+
+const employees = []
+
+function Employee (name, title, salary, status){
+  this.name = name
+  this.title = title
+  this.salary = salary
+  this.status = status
+
+  
+}
 

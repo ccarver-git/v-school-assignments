@@ -1,7 +1,8 @@
 h1 {
-    color: purple;
+    color: #0d355a;
     font-family: Impact;
     text-align: center;
+    font-size: 50px;
     }
 
 h3 {
@@ -14,21 +15,14 @@ h4 {
 
 body {
     font: Arial;
-    line-height: 25px;
-}
-
-p span.special
-{
-  font-weight:bold;
-   color:darkblue;
 }
 
 img {
     margin: auto;
-    width: 50%;
-    display: block;
+    width: 100%;
 }
 
-p {
-    line-height: 25px;
+.comeclean {
+    text-align: center;
+    font-size: 25px;
 }

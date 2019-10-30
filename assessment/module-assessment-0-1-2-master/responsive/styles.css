@@ -1,0 +1,20 @@
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+/* Make the box 400px by 400px when the screen is wider than 1000px */
+@media.box (min-max: 1000px){
+    height: 400px;
+    width: 400px;
+}
+
+
+/* Make the box 100px by 100px when the screen is smaller than 500px */
+
+
+/* Make the box orange when the screen is between 500px and 1000px wide */
+
+
+/* Make the box yellow when the screen is either smaller than 500px or larger 1000px  */
