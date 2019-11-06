@@ -30,7 +30,8 @@
 function string(str1){
     if(str.length <= 20){
         return str1 + str1
-    } else (str.length >= 20){\
+    } else 
+        let stringHalf = str1
         return str1 / 2  
     }
 }
