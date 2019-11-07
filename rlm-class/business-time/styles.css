@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-image {
+  height: 70vh;
+  background-size: cover;
+  background-image: url("images/PartridgeLandscape-5b5cbf5fc9e77c002cbfff8c.jpg");
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav-bar-right {
+  background-color: #ff683b;
+  padding: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  color: white;
+  align-items: right;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 75px;
+  top: 100px;
+  z-index: 0;
+}
+
+.three-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 350px);
+  z-index: 5;
+}
+
+.fire-pit-image {
+  border: #B3330C 3px solid;
+  grid-column: 1 / 2;
+  background-image: url("images/modest-decoration-home-fire-pit-easy-outdoor-fire-pit-vs-fireplace-comparison-guide.jpg");
+  color: white;  
+  font-size: 35px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  text-shadow: 2px 2px black;
+}
+
+.fire-pit-image:hover {
+    filter: grayscale(0);
+    transition-duration: 500ms;
+}
+
+.preview-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+
+}
+
+.flowers-image {
+  border: #ff683b 3px solid;
+  grid-column: 3 / 4;
+  background-image: url("images/residential-landscape-design-5-residential-landscape-design.jpg");
+  color: white;  
+  font-size: 35px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  text-shadow: 2px 2px black;
+}
+
+.flowers-image:hover {
+    filter: grayscale(0);
+    transition-duration: 500ms;
+}
+
+.landscape-plan {
+  border: #00B383 3px solid;
+  grid-column: 2/3;
+  background-image: url("images/our-process-harmony-design-group_landscape.jpg");
+  color: white;
+  font-size: 35px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  text-shadow: 2px 2px black;
+}
+
+.landscape-plan:hover {
+    filter: grayscale(0);
+    transition-duration: 500ms;
+}
+
+.info {
+    background-color: white;
+    height: 150px;
+    padding: 25px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.request-quote {
+    padding: 15px;
+    margin: 25px;
+    font-size: 18px;
+    background-color: #ff683b;
+    border-radius: 8px;
+    border: #ff683b 1px solid;
+}
