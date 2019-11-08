@@ -35,7 +35,7 @@ console.log(
   "Hello and welcome! Your adventure begins now. You will encounter various enemines and your goal is find 3 Golden Keys. "
 );
 
-gameStart();
+// gameStart();
 
 while (isAlive && !hasWon) {
   if (keyCount === 3) {
