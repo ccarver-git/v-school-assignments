@@ -2,10 +2,7 @@ const readline = require("readline-sync");
 
 let isTrapped = true;
 let hasEscaped = false;
-
-// const key = key
-// const door = door
-// const hole = hole
+let keyCount = 0;
 
 console.log("Hello how are you, welcome to the game");
 const name = readline.question("What is your name? ");
@@ -14,8 +11,13 @@ console.log(
 );
 
 while (isTrapped && !hasEscaped) {
-  if (findKey == 1) {
+  if (keyCount === 1) {
     hasEscaped = true;
+    isTrapped = false;
+    console.log(
+      "You found a key and can unlock the door. Congrats! Thanks for playing! "
+    );
+    // the games keep going and doesnt end
   } else {
     let choice = readline.keyIn(
       "Would you like to (l) look around the room, (h) put your hand in the hole or (d) try to open door? ",
@@ -25,24 +27,31 @@ while (isTrapped && !hasEscaped) {
       look();
     } else if (choice === "h") {
       hole();
-    } else if (choice === "d")
-      console/log("The door is locked you need a key.");
+    } else if (choice === "d"){
+      door();
     }
   }
 }
 
 function look() {
   let random = Math.floor(Math.random() * 5);
-  if ((random = 3)) {
+  if (random == 4) {
     findKey();
-  } else {
-  }
+  } ;
 }
 
 function hole() {
-  return isTrapped;
+  isTrapped = false;
+  console.log("You have choosen poorly and must meet your inevitable death. You have been killed by soemthing in the hole. dun dun dun!")
+}
+
+function door() {
+  console.log("Sorry this door is locked. You need a key to unlock the door.");
 }
 
 function findKey() {
-  return hasEscaped;
+  console.log(
+    "You found a key! Yeah! Now you can unlock the door and escape! Thanks for playing the game! "
+  );
+  keyCount = keyCount + 1;
 }

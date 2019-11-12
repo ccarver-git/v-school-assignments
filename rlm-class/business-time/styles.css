@@ -38,6 +38,27 @@ li {
   z-index: 0;
 }
 
+.form-request-quote {
+    position: absolute;
+    border-radius: 15px;
+    background-color: white;
+    /* opacity: 0.8; */
+    left: 850px;
+    top: 250px;
+    height: 250px;
+    width: 400px;
+    z-index: 0;
+}
+
+.request-quote-main {
+    padding: 15px;
+    margin: 25px;
+    font-size: 18px;
+    background-color: #00B383;
+    border-radius: 8px;
+    border: #00B383 1px solid;
+}
+
 .three-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
