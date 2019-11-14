@@ -106,19 +106,76 @@
 
 // console.log(arrayOfArrays[2][2])
 
-// var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"]
-// var alphabet = "abcdefghijklmnopqrstuvwxyz"
+// console.log(people[0]+ ": " + alphabet)
 
-// function forception(people, alphabet){
-//   for(i = 0; i < people.length; i++){
+// var eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
+
+// for(i = 0; i < eventsAtWork.length; i++){
+//   if(eventsAtWork[i] === "party"){
+//     console.log("hooray")
 //   }
 // }
 
-// console.log(people[0]+ ": " + alphabet)
+// var count = 0
 
+// var booleans = [true, true, false, true, false, false, false]
 
-var eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
+// for(i = 0; i < booleans.length; i++){
+//   if(booleans[i] === true)
+//   count++
+// }
 
-for(i = 0; i < eventsAtWork.length; i++){
-  console.log()
+// console.log(count)
+
+//PRACTICE//
+
+// var users = [
+//   {
+//     name: "Sophie",
+//     age: 12
+//   },
+//   {
+//     name: "Larry",
+//     age: 32
+//   },
+//   {
+//     name: "Cathy",
+//     age: 40
+//   }
+// ];
+
+// for (i = 0; i < users.length; i++) {
+//   users[i]isAdmin === true;
+//   console.log(users[i]);
+  //add isAdmin as a property to each person
+// }
+
+//FORECEPTION//
+
+// var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"];
+// var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+// function forception(people, alphabet) {
+//   const newArr = []
+//   for (i = 0; i < people.length; i++) {
+//     newArr.push(people[i] + ': ', ...alphabet.toUpperCase().split(''))
+//   }
+//   console.log(newArr)
+// }
+// forception(people, alphabet)
+
+// const newArr = people.map(people => people + alphabet)
+
+var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"];
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+function forception(people, alphabet){
+  const newArr = []
+  for(i = 0; i < people.length; i++){
+    newArr.push(people[i] +': ', alphabet.toUpperCase().split(''))
+  }
+  console.log(newArr)
 }
+forception(people, alphabet)
+
+

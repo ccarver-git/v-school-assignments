@@ -18,8 +18,3 @@ addForm.addEventListener("submit", function(event) {
     getItems.removeChild(li);
   });
 });
-
-
-for(let i = 0; i < 20; i--){
-
-}
