@@ -1,20 +1,24 @@
 const employees = []
 
-function Employees(name, jobTitle, salary, status){
+function Employee(name, jobTitle, salary, status){
     this.name = name
     this.jobTitle = jobTitle
     this.salary = salary
     this.status = status
-    this.printStuff = function(){
-        console.log(`${this.name}`)
-    }
-
 }
 
-const emplpyeeOne = new Employee("Clint", "Coder", "20,000", "Contract")
-const employeeTwo = new Employee("Jordan", "Basketball Player", "30 Billion", "Full-Time")
-const employeeThree = new Employee("Tiger", "Golfer", "10 Million", "Full-Time")
+const clint = new Employee("Clint", "Coder", "$8/hr", "Contract")
+const jordan = new Employee("Jordan", "Basketball Player", "30 Billion", "Full-Time")
+const tiger = new Employee("Tiger", "Golfer", "10 Million", "Full-Time")
 
+employees.push(clint, jordan, tiger)
+
+console.log(employees)
+
+
+// Employees.prototype.record = function() {
+//         console.log("This employees name is " + this.firstName + " and their postion is " + this.jobTitle);
+// }
 
 
 
