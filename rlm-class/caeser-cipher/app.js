@@ -50,11 +50,11 @@
 
 // - PRACTICE - using .toLowerCase(), .toUpperCase(), .slice(), .length and .concat(), make a capitalized version
 
-const frozenTwo = "Is the whole “putting us in mortal danger” going to be a regular thing?"
-const frozenQuote = "Here is a quote from Frozen II, "
+// const frozenTwo = "Is the whole “putting us in mortal danger” going to be a regular thing?"
+// const frozenQuote = "Here is a quote from Frozen II, "
 
-const twoStrings = frozenQuote.concat(frozenTwo);
-console.log(twoStrings);
+// const twoStrings = frozenQuote.concat(frozenTwo);
+// console.log(twoStrings);
 
 // const lowerCase = frozenTwo.toLowerCase();
 // console.log(lowerCase)
@@ -69,4 +69,17 @@ console.log(twoStrings);
 
 
 
-// - Given: cannedMeats = ["chicken", "spam", "tuna", "clams"], how would we get get the index of "tuna"?
+meats = ["chicken", "steak", "fish"];
+
+const tuna = cannedMeats.indexOf("steak")
+console.log(tuna)
+
+const reverseMeats = cannedMeats.reverse();
+console.log(reverseMeats)
+
+let name = "Clint";
+let age = 35;
+
+console.log(`${name} loves to eat ${cannedMeats} even if he is only ${age}`)
+
+console.log(`${name} loves to play golf in Hawaii. ${name} is the young age of ${age}. `)
