@@ -32,10 +32,10 @@ li {
 }
 
 .logo {
-  position: absolute;
-  margin-left: 75px;
-  top: 100px;
-  z-index: 0;
+  margin-left: 490px;
+    margin-top: 140px;
+    height: 175px;
+    text-shadow: 3px;
 }
 
 .form-request-quote {

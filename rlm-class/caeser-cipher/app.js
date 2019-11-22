@@ -67,19 +67,31 @@
 
 // console.log(frozenTwo.length)
 
+// meats = ["chicken", "steak", "fish"];
 
+// const noBrackets = meats.split(' ')
+// console.log(noBrackets)
 
-meats = ["chicken", "steak", "fish"];
+// const tuna = cannedMeats.indexOf("steak")
+// console.log(tuna)
 
-const tuna = cannedMeats.indexOf("steak")
-console.log(tuna)
+// const reverseMeats = cannedMeats.reverse();
+// console.log(reverseMeats)
 
-const reverseMeats = cannedMeats.reverse();
-console.log(reverseMeats)
+// let name = "Clint";
+// let age = 35;
 
-let name = "Clint";
-let age = 35;
+// console.log(`${name} loves to eat ${cannedMeats} even if he is only ${age}`)
 
-console.log(`${name} loves to eat ${cannedMeats} even if he is only ${age}`)
+// console.log(`${name} loves to play golf in Hawaii. ${name} is the young age of ${age}. `)
 
-console.log(`${name} loves to play golf in Hawaii. ${name} is the young age of ${age}. `)
+const phone = "801.555.5555";
+const areaCode = phone.slice(4, 7);
+
+console.log(areaCode)
+
+const addTwoNumbers = () => {
+    return num1 + num2
+}
+console.log(10, 5)
+

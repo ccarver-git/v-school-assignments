@@ -178,7 +178,7 @@ function randomAttackPower(max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 
   // randomly hit the ememy and vice versa with a random power from the enemy back and forth until someone dies.
-  // // if the enemey wins and lowers the health power to 0
+  // // if the enemey wins and l
   // if(myCharacter.hp === 0 then game over with cool death messge)
 }
 
