@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+        <h1>Kanoe Travel</h1>
+        <form id="travelForm">
+            <input type="text" placeholder="first-name" id="firstName" className="first" />
+            <input type="text" placeholder="last-name" id="lastName" className="first"/>
+            <input type="number" placeholder="age" id="age" className="first" />
+             <br />
+          <select id="location">
+            <option value="select">Location:</option>
+            <option value="Moscow, Idaho">Moscow, Idaho</option>
+            <option value="Blanding, Utah">Blanding, Utah</option>
+            <option value="Jackson, Wyoming">Jackson, Wyoming</option>
+          </select>
+          <br />
+          Male<input type="radio" name="gender" value="male" />
+          Female<input type="radio" name="gender" value="female" />
+          <br />
+          Vegetarian<input type="checkbox" value="vegetarian" name="food" />
+          Lactose Free<input type="checkbox" value="lactose free" name="food" />
+          Peanut Allergies<input type="checkbox" value="peanut allergies" name="food"/>
+          Meat Eater<input type="checkbox" value="meat eater" name="food" />
+          Sugar Only<input type="checkbox" value="sugar only" name="food" />
+          <br />
+          <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

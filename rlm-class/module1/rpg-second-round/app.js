@@ -1,5 +1,7 @@
 const ask = require("readline-sync");
 
+const currentBadGuy = selectBadGuy();
+
 let gameLost = false;
 let gameWon = false;
 let basketCount = 0;
@@ -22,19 +24,13 @@ function BadGuy(name, bp, hp) {
   this.hp = hp;
 }
 
-//BAD GUYS//
-const rodman = new BadGuy("Dennis Rodman", 75, 50);
-const artest = new BadGuy("Ron Artest", 45, 70);
-const laimbeer = new BadGuy("Bill Laimbeer", 30, 90);
-const badguys = [rodman, artest, laimbeer];
-
 // GAME INTRODUCTION //
 console.log("Welcome to NBA Jam!!");
 
-const initials = ask.question("What are your initials? ");
+const playerName = ask.question("What is your name? ");
 
 console.log(
-  `Welcome ${initials}, just like the old arcade game the goal is to win or not get knockout by a broken backboard. First one to 20 points wins. You vs the CPU. Game on! `
+  `Welcome ${playerName}, just like the old arcade game the goal is to win or not get knockout by a broken backboard. First one to 12 points wins. You vs the CPU. Game on! `
 );
 
 // CHOOSE A PLAYER //
@@ -63,7 +59,7 @@ function gameStart() {
 gameStart();
 
 while (!gameWon && !gameLost) {
-  if (basketCount === 20) {
+  if (basketCount === 12) {
     gameLost = false;
     gameWon = true;
     console.log("BOOMSHAKALAKA! Great shot! Game over! You win!.");
@@ -91,7 +87,7 @@ function dribble() {
   let random = Math.floor(Math.random() * 7);
   if (dribbleCount === 6) {
     const choice = ask.keyIn(
-      `${initials} you are in prime dunking range press (k) to Dunk!`,
+      `${playerName} you are in prime dunking range press (k) to Dunk!`,
       { limit: "k" }
     );
     if (choice === "k") {
@@ -115,6 +111,35 @@ function status() {
   `);
 }
 
+// RANDOM BAD GUY GENERATOR //
+function selectBadGuy() {
+  const rodman = new BadGuy("Dennis Rodman", 75, 50);
+  const artest = new BadGuy("Ron Artest", 45, 70);
+  const laimbeer = new BadGuy("Bill Laimbeer", 30, 90);
+  const badguys = [rodman, artest, laimbeer];
+  let random = Math.floor(Math.random() * badguys.length);
+  return badguys[random];
+}
+
+// ENCOUNTER BAD GUYS //
+function badGuyEncounter() {
+  let choice = ask.keyIn(
+    `${myCharacter.name} got D'd up by ${currentBadGuy.name}! Would you like to (s) Shoot, (r) Run away, (c) Check Status (q) Quit`,
+    { limit: "srcq" }
+  );
+  myCharacter.hp -= 5;
+  if (choice === "s") {
+    shoot();
+  } else if (choice === "r") {
+    run();
+  } else if (choice === "q") {
+    gameLost = true;
+    console.log("You quit! Come back soon.d");
+  } else if (choice === "c") {
+    status();
+  }
+}
+
 // SHOOTING THE BALL //
 function shoot() {
   let hoops = Math.random();
@@ -125,35 +150,9 @@ function shoot() {
     basketCount += 2;
   } else if (hoops >= 0.5) {
     console.log(
-      `You missed and ${currentBadGuy.name} got the ball and slammed you down, minus 20 to your health. `
+      `You missed and ${currentBadGuy.name} got the ball and slammed you to the ground, minus 5 to your health. `
     );
-    myCharacter.hp -= 20;
-  }
-}
-// RANDOM BAD GUY GENERATOR //
-function selectBadGuy() {
-  let random = Math.floor(Math.random() * badguys.length);
-  return badguys[random];
-}
-console.log(selectBadGuy());
-
-// ENCOUNTER BAD GUYS //
-function badGuyEncounter() {
-  const currentBadGuy = selectBadGuy();
-  let choice = ask.keyIn(
-    `${myCharacter.name} got D'd up by ${currentBadGuy.name}! Would you like to (s) Shoot, (r) Run away, (s) Check Status (q) Quit`,
-    { limit: "sq" }
-  );
-  myCharacter.hp -= 15;
-  if (choice === "s") {
-    shoot();
-  } else if (choice === "r") {
-    run();
-  } else if (choice === "q") {
-    gameLost = true;
-    console.log("You quit! Come back soon.d");
-  } else if (choice === "s") {
-    status();
+    myCharacter.hp -= 5;
   }
 }
 
@@ -164,10 +163,12 @@ function dunk() {
 }
 
 function run() {
-    if (Math.random() < 0.5) {
-        console.log(`${currentBadGuy.name} has caught you and thrown you to the ground.`);
-        myCharacter.hp -= 15
-    } else {
-        console.log(`You are super fast and have outran ${currentBadGuy.name}! `);
-    }
+  if (Math.random() < 0.5) {
+    console.log(
+      `${currentBadGuy.name} has caught you and thrown you to the ground, minus 5 to your health.`
+    );
+    myCharacter.hp -= 5;
+  } else {
+    console.log(`You are super fast and have outran ${currentBadGuy.name}! `);
+  }
 }

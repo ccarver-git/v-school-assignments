@@ -85,13 +85,41 @@
 
 // console.log(`${name} loves to play golf in Hawaii. ${name} is the young age of ${age}. `)
 
+const cutUpTwo = "ethan"
 const phone = "801.555.5555";
-const areaCode = phone.slice(4, 7);
+const areaCode = phone.slice(0, 3);
+const cutUp = phone.split("").join(`${cutUpTwo}`);
+
 
 console.log(areaCode)
+console.log(cutUp)
 
-const addTwoNumbers = () => {
-    return num1 + num2
-}
-console.log(10, 5)
+// const addTwoNumbers = (num1, num2) => {
+//     return (num1 + num2);
+// }
+// console.log(addTwoNumbers(2, 5));
 
+// How would one iterate over a nested array? 
+    // nested for loop
+// How do you instantiate something from a constructor?
+    // using the New
+// Would it be worth it to write min-max questions for grid?
+
+// const arr = [[3, 4, 2], [1, 2, 3]]
+// for(let i = 0; i < arr.length; i++) {
+//     for(let j = 0; j < arr[i].length; j++){
+//     console.log(arr[i][j]);
+//     }
+// }
+
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = 0; j < arr[i].length; j++){
+//         console.log
+//     }
+// }
+
+// const myGreeting = document.getElementById("greeting")
+// myGreeting.textContent = "Long time no see!"
+
+// const myGreeting = document.getElementById("id tag")
+// myGreeting.textContent = 

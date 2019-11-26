@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.addBox {
+    display: grid;
+    justify-content: center;
+    background-color: #B38054;
+    margin: 30px;
+    padding: 15px;
+}
+
+.subBox {
+    display: grid;
+    justify-content: center;
+    background-color: #FFC491;
+    margin: 30px;
+    padding: 15px;
+}
+
+.multBox {
+    display: grid;
+    justify-content: center;
+    background-color: #46A0B3;
+    margin: 30px;
+    padding: 15px;
+}
