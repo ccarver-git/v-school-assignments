@@ -1,18 +1,18 @@
 
 //.MAP
 
-// function doubleNumbers(arr){
-//   return arr.map((num) => {
-//     return num * 2 
-//   })
-// }
-// console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
+function doubleNumbers(arr){
+  return arr.map((num) => {
+    return num * 2 
+  })
+}
+console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
-// function stringItUp(arr){
-//   return arr.map((clown) => {
-//     return String(clown)
-//   })
-// }
+function stringItUp(arr){
+  return arr.map((clown) => {
+    return String(clown)
+  })
+}
 
 // console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
