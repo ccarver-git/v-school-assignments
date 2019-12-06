@@ -1,12 +1,12 @@
-// // const arr = [3, 6, 8, 2];
+const arr = [3, 6, 8, 2];
 
-// // const result = arr.filter(function(num) {
-// //   if (num >= 5) {
-// //     return num
-// //   }
-// // });
+const result = arr.filter((num) => {
+  if (num >= 5) {
+    return num
+  }
+});
 
-// // console.log(result)
+console.log(result)
 
 // // const arr = [3, 6, 8, 2]
 
@@ -147,6 +147,20 @@
 // }
 // console.log(theBigArray(arrays));
 
+// const myList = [ 111, 222, 333, 444, 555 ]
+// const results = myList.reduce( (acc, cur, i, arr ) => {
+//     console.log(`
+//         ${acc} accumulator: what's returned
+//         ${cur} current value: the item of the array being accessed
+//         ${i} index: index of the current value from the array
+//         ${arr} array: the original array you're iterating through
+//     `)
+//     return acc + cur
+
+// }, 10)
+
+// console.log(results)
+
 // MULTIPLE ARRAY METHODS //
 
 var peopleArray = [
@@ -187,15 +201,31 @@ var peopleArray = [
   }
 ];
 
-function sortedOfAge(arr) {
-  return peopleArray.filter(ofAge => {
-    if (ofAge.age >= 18) 
-    return ofAge;
+// const sortedOfAge = arr => {
+//   return arr
+//     .filter(ofAge => ofAge.age >= 18)
 
-    peopleArray.sort(function(a, b){
-        return b.lastName - a.lastName
-    })
-  });
-}
+//     //   var name = peopleArray.firstName
 
-console.log(sortedOfAge(peopleArray));
+//     //   console.log(name)
+
+//     //   console.log(`<li>${firstName}${lastName} is ${age}</li>`);
+    
+//     .sort((a, b) => a.lastName[0] > b.lastName[0]);
+// }
+
+// console.log(sortedOfAge(peopleArray));
+
+// const sortedOfAge = people => people.filter(person => person.age >= 18).sort((a, b) => a.lastName[0] > b.lastName[0])
+
+// console.log(sortedOfAge(peopleArray))
+
+
+console.log(peopleArray)
+
+
+
+console.log([2,3,55,33,22,33,66].sort((a, b) => {
+    console.log('Check', a, b, a - b)
+    return a - b
+}))
