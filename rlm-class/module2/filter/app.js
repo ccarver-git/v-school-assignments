@@ -1,12 +1,12 @@
-const arr = [3, 6, 8, 2];
+// const arr = [3, 6, 8, 2];
 
-const result = arr.filter((num) => {
-  if (num >= 5) {
-    return num
-  }
-});
+// const result = arr.filter((num) => {
+//   if (num >= 5) {
+//     return num
+//   }
+// });
 
-console.log(result)
+// console.log(result)
 
 // // const arr = [3, 6, 8, 2]
 
@@ -35,7 +35,7 @@ console.log(result)
 // //     { name: "Bob Ziroll", member: true }
 // // ]
 
-// // const result = arr.filter(member => {
+// // const result = arr.filter((member) => {
 // //     if(member.member === true){
 // //         return member
 // //     }
@@ -201,6 +201,35 @@ var peopleArray = [
   }
 ];
 
+const mappedPeople = peopleArray.map((person, i) => { 
+  console.log(i,person)
+  return `<h1>${person.firstName} ${person.lastName}</h1>
+          <h2>${person.age}</h2>`
+})
+
+console.log(mappedPeople)
+
+const underTwenty = peopleArray.filter((person) => {
+  console.log(person.age > 20)
+  return person.age > 20
+  
+})
+
+
+
+
+
+
+
+
+
+
+
+// const person = peopleArray.find((age) => age < 18)
+
+// console.log(person)
+
+
 // const sortedOfAge = arr => {
 //   return arr
 //     .filter(ofAge => ofAge.age >= 18)
@@ -221,11 +250,44 @@ var peopleArray = [
 // console.log(sortedOfAge(peopleArray))
 
 
-console.log(peopleArray)
+// console.log(peopleArray)
 
 
 
-console.log([2,3,55,33,22,33,66].sort((a, b) => {
-    console.log('Check', a, b, a - b)
+// console.log([2,3,55,33,22,33,66].sort((a, b) => {
+//     console.log('Check', a, b, a - b)
+//     return a - b
+// }))
+
+var arr = [1,2,3,4];
+
+// const addOne = arr.map(function(item){
+//     return item + 1;
+// })
+
+const addOne = arr.map((item) => item + 1)
+
+console.log(addOne)
+
+var numbers = [12,4,56,27];
+
+numbers.filter(function(number){
+    return number >= 25;
+})
+
+const older = numbers.filter((number) => number >= 25)
+
+console.log(older)
+
+var numbersTwo = [1,2,3,4,5];
+
+const addTwo = numbersTwo.reduce((a, b) => a + b)
+
+console.log(addTwo)
+
+var points = [98, 123, 85, 78, 4]
+
+const order = points.sort(function(a,b){
     return a - b
-}))
+})
+console.log(order)
