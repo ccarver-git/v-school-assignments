@@ -12,26 +12,33 @@ function sum(x, y){
 
 
 } 
-console.log(sum("golf", 8))
-// try {
-//     sum(1, 2)
-// }
+console.log(sum(1, 2))
 
-// catch {
-//     console.log("Houston we have a problem")
-// }
+var user = {username: "sam", password: "123abc"};
 
-// var user = {username: "sam", password: "123abc"};
+function login(username, password){
+    try {
+        if(password !==  password){
+            throw 
+        }
+        console.log("Login successful!")
+}
 
-// function login(username, password){
-//   if(username === password)
-//   console.log("You are correct, login successful!")
-// }
+// If password not entered 
+if (password1 == '') 
+alert ("Please enter Password"); 
+  
+// If confirm password not entered 
+else if (password2 == '') 
+alert ("Please enter confirm password"); 
+  
+// If Not same return False.     
+else if (password1 != password2) { 
+alert ("\nPassword did not match: Please try again...") 
+return false; 
+} 
 
-// try {
-//     login()
-// }
-
-// catch {
-//     console.log(" ")
-// }
+// If same return True. 
+else{ 
+alert("Password Match: Welcome to GeeksforGeeks!") 
+return true; 
