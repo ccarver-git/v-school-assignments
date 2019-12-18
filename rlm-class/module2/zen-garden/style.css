@@ -5,12 +5,12 @@
 
 .container {
     display: grid; 
-    grid-template-rows: repeat(6, 175px);
+    grid-template-rows: repeat(16, 175px);
     grid-template-columns: repeat(6, 1fr);
     background-image: url("images/contours-opaque.png");
     width: 100vw;
-    
-    /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+    height: 1500px;
+    z-index: 2;
 }
 
 .main-title {
@@ -18,6 +18,7 @@
     grid-row: 1 / 3;
     grid-column: 1 / 7;
     margin-bottom: 120px;
+    z-index: -1;
 }
 
 .header {
@@ -26,14 +27,18 @@
 }
 
 #logo {
+    background-size: cover;
     background-image: url("http://www.csszengarden.com/214/enso.svg");
-    transform: scale(1);
+    transform: scale(9);
+    margin-top: -10px;
+    margin-left: -120px;
     height: 80px;
     width: 80px;
+    opacity: 0.4;
 }
 
 h1 {
-    color: white;
+    color: rgba(255, 255, 255, 0.849);
     font-family: 'Lato', sans-serif;
     font-style: normal;
     text-align: center;
@@ -49,51 +54,110 @@ h2 {
     font-size: 20px;
 }
 
-.design-options {
+h3 {
+    color: #325050;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: rgba(255, 255, 255, 0.185);
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-top: 40px;
+    text-transform: uppercase;
+    text-indent: 80px;
+
+}
+
+h5 {
+    font-size: 1em;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+.nav-bar {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: rgba(255, 255, 255, 0.301);
     padding: 25px;
-    margin-right: 100px;
     text-transform: uppercase;
     font-style: normal;
-    margin-top: 150px;
-    margin-left: 150px;
+    text-align: center;
+    margin-top: 180px;
     font-size: 1.2em;
     grid-row: 1 / 2;
-    grid-column: 5 / 7;
-    color: white;
+    grid-column: 1 / -1;
+    color: rgba(255, 255, 255, 0.753);
 }
 
 .authors {
     background-color: rgba(131, 153, 131, 0.274);
-    grid-row: 3 / 20;
-    grid-column: 5 / 7;
+    grid-row: 12 / 13;
+    grid-column: 1 / -1;
     margin-top: 0px;
 }
-.links {
+/* .links {
     background-color: lightpink
+} */
+
+.main-content {
+    margin-top: 100px;
+    grid-row: 2 / 6;
+    grid-column: 1 / -1;
+    background-color: white;
+    background-size: cover;
+    z-index: 0;
+}
+
+.view {
+    color: rgba(255, 255, 255, 0.521);
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 0.1em;
+    margin-right: 80px;
+    margin-left: 80px;
+    color: #325050;
+    line-height: 2;
+    padding-bottom: 12px;
+}
+
+.participation {
+    margin-top: 40px;
+    grid-row: 7 / 9;
+    grid-column: 1 / -1;
+    height: 500px;
+    background-image: url("images/bamboo.png");
+    background-size: cover;
+    background-color: rgba(138,188,159,0.5);
+    margin-bottom: 40px;
 }
 
 .bottom-quote {
     background-image: url("images/koi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-    padding-top: 75px;
     text-align: center;
-    color: white;
-    grid-row: 5 / 6;
+    color: rgba(255, 255, 255, 0.514);
+    grid-row: 10 / 12;
     grid-column: 1 / -1;
     font-size: 2em;
     font-style: italic;
+    margin-bottom: 120px;
 }
 
 .footer {
-    grid-row: 6 / 8;
+    margin-top: 80px;
+    grid-row: 11 / 12;
     grid-column: 1 / -1;
-    background-color: #134347;
-
 }
+
+
+/* @media not all, not all, (-webkit-min-device-pixel-ratio: 1.5), not all, (min-resolution: 1.5dppx)
+.design-archives nav { */
+
+    
 
 @media (max-width: 900px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
@@ -109,8 +173,6 @@ h2 {
     }
 }
 
-/* FLEX */
-/* use flexbox to make the icons behave like css zen garden's social icons */
 .icons {
     display: flex;
     justify-content: space-around;
@@ -119,9 +181,17 @@ h2 {
     padding: 10px;
 }
 
-.icons > div {
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border-radius: 50%;
+.js {
+    width: 48px;
+    height: 48px;
+    background-image: url("images/CSS3_logo_and_wordmark.svg.png");
+    /* background-color: rgba(0, 0, 0, 0.329); */
 }
+
+/* 
+.icons > div {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+} */
