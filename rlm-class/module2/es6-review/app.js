@@ -70,17 +70,41 @@
 
 const carrots = ["bright orange", "ripe", "rotten"]
 
-function mapVegetables(arr) { 
+const mapVegetables = (arr) => { 
     return arr.map((carrot) => {
         return { type: "carrot", name: carrot }
     })
 }
-console.log(carrot)
+console.log(carrots)
 
-var doMathSum = (a, b) => {
-    return a + b
-}
+// const add = doMathSum = (a, b) => a + b
 
-var produceProduct = (a, b) => {
-    return a * b
-}
+// var produceProduct = (a, b) => a * b
+
+
+// const people = [
+//     {
+//         name: "Princess Peach",
+//         friendly: false
+//     },
+//     {
+//         name: "Luigi",
+//         friendly: true
+//     },
+//     {
+//         name: "Mario",
+//         friendly: true
+//     },
+//     {
+//         name: "Bowser",
+//         friendly: false
+//     }
+// ]
+
+
+
+// const filterForFriendly = (arr) => arr.filter((person) => person.friendly)
+
+// const [{name1 = "Princess Peach", friendly1 = true}, {name2 = "Luigi", friendly2 = true}] = people 
+
+// console.log(name1)

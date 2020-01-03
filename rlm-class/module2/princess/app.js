@@ -1,3 +1,5 @@
+let intervalId;
+
 class Player {
   constructor(name) {
     this.hasStar = false;
@@ -11,30 +13,31 @@ class Player {
     if (this.status === "small") {
       this.gameActive = false;
       console.log("You are dead");
+      clearInterval(intervalId)
     } else if (this.status === "big") {
       this.status = "small";
     } else if (this.status === "powered up") {
-      this.status = "big"
+      this.status = "big";
     }
   }
 
   gotPowerup() {
-      if ( this.status === "small") {
-          this.status = "big"
-          console.log("You grew big!");
-      } else if (this.status === "big") {
-          this.status = "powered up"
-          console.log("You got powered up!");
-      } else if ( this.status === "powered up"){
-          this.hasStar++
-          console.log("Congratulatoins! You got a star!");
-      }
+    if (this.status === "small") {
+      this.status = "big";
+      console.log("You grew big!");
+    } else if (this.status === "big") {
+      this.status = "powered up";
+      console.log("You got powered up!");
+    } else if (this.status === "powered up") {
+      this.hasStar++;
+      console.log("Congratulatoins! You got a star!");
+    }
   }
 
   addCoin() {
     this.totalCoins++;
   }
-  
+
   print() {
     console.log(`
     Name: = ${this.name}
@@ -45,13 +48,10 @@ class Player {
   }
 }
 
-const player = new Player("mario")
+const player = new Player("Mario");
 
-setInterval(() => {
-    
-},1000);
-
-while(player.gameActive) {
+intervalId = setInterval(() => {
+  if (player.gameActive) {
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
       player.gotHit();
@@ -60,6 +60,6 @@ while(player.gameActive) {
     } else {
       player.addCoin();
     }
-    player.print()
-  } 
-  
+    player.print();
+  }
+}, 1000);
