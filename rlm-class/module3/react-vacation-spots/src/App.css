@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 300px auto 300px 100px;
+  grid-template-rows: repeat(3, 120px);
+  margin: 0px;
+}
+
+.place {
+  grid-column: 3;
+  background-color: #3BB3B3;
+  color: whitesmoke;
+  padding: 25px;
+  text-shadow: #282c34;
+  text-align: center;
+  font-size: 45px;
+  margin: 0px;
+}
+
+.price {
+  grid-column: 3;
+  text-align: center;
+  background-color: #6DFFFE;
+  font-size: 25px;
+  padding: 30px;
+  margin: 0px;
+}
+
+.season {
+  grid-column: 3;
+  text-align: center;
+  padding: 30px;
+  background-color: #FFA36E;
+  margin: 0px;
+}

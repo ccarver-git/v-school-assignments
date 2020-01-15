@@ -2,10 +2,10 @@ import React from 'react'
 
 function Product(props) {
     return (
-        <div>
-            <h1>{props.product.place}</h1>
-            <h2>{props.product.price}</h2>
-            <p>{props.product.timeToGo}</p>
+        <div className="container">
+            <h1 className="place">{props.product.place}</h1>
+            <h2 className="price">${props.product.price}</h2>
+            <p className="season">{props.product.timeToGo}</p>
         </div>
     )
 }
