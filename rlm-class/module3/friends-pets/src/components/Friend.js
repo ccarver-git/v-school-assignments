@@ -14,6 +14,3 @@ function Friend(props) {
 }
 
 export default Friend
-
-// props 
-// const props = {}
